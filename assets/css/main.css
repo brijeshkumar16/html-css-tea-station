@@ -144,3 +144,10 @@ header .banner button:hover {
   background-color: var(--clr-primary-light);
   color: var(--clr-primary);
 }
+
+/* Content Divider */
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(to left, var(--clr-primary), #e9b949, var(--clr-primary));
+  width: 100%;
+}
