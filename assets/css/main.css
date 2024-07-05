@@ -153,6 +153,62 @@ p {
   }
 }
 
+/* Navbar */
+.nav-btn {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  z-index: 1;
+  cursor: pointer;
+}
+.nav {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background-color: var(--clr-grey-10);
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
+.nav .close-icon {
+  text-align: right;
+  font-size: 2.5rem;
+  padding-right: 1rem;
+  color: #f29c9c;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.nav .close-icon:hover {
+  color: #bb2525;
+}
+.nav ul li {
+  list-style-type: none;
+}
+.nav ul li a {
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grey-5);
+  display: block;
+  transition: var(--transition);
+}
+.nav ul li a:hover {
+  background-color: var(--clr-primary-light);
+  border-left: 0.25rem solid var(--clr-primary);
+  padding-left: 1.5rem;
+  color: var(--clr-primary);
+}
+.showNav {
+  transform: translateX(0);
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    max-width: 20rem;
+  }
+}
+
 /* Header */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/main-bcg.jpeg);
