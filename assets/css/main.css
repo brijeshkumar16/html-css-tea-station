@@ -433,3 +433,28 @@ header .banner button {
     width: 50%;
   }
 }
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: var(--clr-white);
+  text-align: center;
+}
+footer .social-icon {
+  margin-bottom: 1.25rem;
+}
+footer .social-icon a {
+  font-size: 1.5rem;
+  color: var(--clr-white);
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+footer .social-icon a:hover {
+  color: var(--clr-primary);
+}
+footer h4 {
+  font-weight: 400;
+}
+footer h4 .company {
+  color: var(--clr-primary);
+}
