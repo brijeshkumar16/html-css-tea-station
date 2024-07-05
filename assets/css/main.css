@@ -104,6 +104,23 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+.form-control {
+  background-color: var(--clr-grey-10);
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  letter-spacing: var(--spacing);
+  text-transform: uppercase;
+}
 
 @media screen and (min-width: 992px) {
   .section-center {
@@ -366,4 +383,53 @@ header .banner button {
 .our-service .service-list .card .info .btn {
   border-radius: var(--radius);
   margin-top: 1.25rem;
+}
+
+/* Contact Us */
+.contact-us {
+  background-color: var(--clr-grey-10);
+}
+.contact-us .info {
+  margin-bottom: 1rem;
+}
+.contact-us .info .item {
+  margin-bottom: 1.75rem;
+}
+.contact-us .info .item .icon {
+  font-weight: 400;
+  color: var(--clr-primary);
+}
+.contact-us .form {
+  max-width: 35rem;
+  background-color: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+.contact-us .form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-us .form h3 {
+  text-align: center;
+  color: var(--clr-grey-5);
+  padding-top: 1.5rem;
+}
+.contact-us .form .input-group {
+  padding: 1rem 1.5rem;
+}
+.contact-us .form .btn {
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+@media screen and (min-width: 992px) {
+  .contact-us .info {
+    float: left;
+    width: 50%;
+  }
+  .contact-us .form {
+    float: left;
+    width: 50%;
+  }
 }
