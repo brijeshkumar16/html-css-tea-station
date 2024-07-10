@@ -53,7 +53,6 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
-
 h1 {
   font-size: 3rem;
 }
@@ -104,6 +103,12 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
 .form-control {
   background-color: var(--clr-grey-10);
   letter-spacing: var(--spacing);
@@ -120,13 +125,6 @@ p {
   color: var(--clr-grey-1);
   letter-spacing: var(--spacing);
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-    padding: 4rem 1rem;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -345,14 +343,12 @@ header .banner button {
   max-width: 17rem;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 640px) {
   .skills .box {
     float: left;
     width: 50%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .skills .box {
     width: 25%;
@@ -381,7 +377,6 @@ header .banner button {
   max-width: 26rem;
   color: var(--clr-grey-5);
 }
-
 @media screen and (min-width: 1024px) {
   .about .img,
   .about .info {
